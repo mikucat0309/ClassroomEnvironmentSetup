@@ -25,7 +25,7 @@ Rename-Item "C:\Program Files (x86)\CHIYOU\REDAgent.exe" "BLUEAgent.exe" -Force
 taskkill.exe /F /T /IM "REDAgent.exe"
 
 function dl ($url, $file) {
-    .\aria2c.exe --dir=$DOWNLOAD --out=$file $url --file-allocation=none
+    .\aria2c.exe --dir=$PSScriptRoot --out=$file $url --file-allocation=none
 }
 
 # MinGW-w64
