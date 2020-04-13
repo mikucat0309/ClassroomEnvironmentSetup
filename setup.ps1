@@ -1,5 +1,3 @@
-$DOWNLOAD = $HOME + '\Downloads'
-
 $MINGW_URL = 'https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z'
 $MINGW_ZIP = 'mingw64.7z'
 
@@ -23,6 +21,7 @@ if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Adm
 # Kill TrAsH cHiYoU
 Rename-Item "C:\Program Files (x86)\CHIYOU\REDAgent.exe" "BLUEAgent.exe" -Force
 taskkill.exe /F /T /IM "REDAgent.exe"
+taskkill.exe /F /T /IM "BLUEAgent.exe"
 
 function dl ($url, $file) {
     .\aria2c.exe --dir=$PSScriptRoot --out=$file $url --file-allocation=none
