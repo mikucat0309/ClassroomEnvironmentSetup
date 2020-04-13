@@ -30,7 +30,7 @@ function dl ($url, $file) {
 
 # MinGW-w64
 dl -url $MINGW_URL -file $MINGW_ZIP
-.\7z.exe x -oC:\Users\Public\Documents $MINGW_ZIP
+.\7z.exe x -oC:\ $MINGW_ZIP
 
 # Edit System Path
 $path = [System.Environment]::GetEnvironmentVariable("Path", "Machine").Split(";") | Where-Object { $_ -notlike "*msys*"}
