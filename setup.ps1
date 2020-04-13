@@ -11,7 +11,7 @@ $CLION_CONFIG = 'silent.config'
 
 
 # Change Work Dir
-Set-Location $Download
+Set-Location $PSScriptRoot
 
 $currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
