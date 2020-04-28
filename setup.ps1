@@ -7,7 +7,6 @@ $CLION_INSTALL_DIR = 'C:\CLion'
 $CLION_CONFIG_URL = 'https://download.jetbrains.com/cpp/silent.config'
 $CLION_CONFIG = 'silent.config'
 
-
 # Change Work Dir
 Set-Location $PSScriptRoot
 
@@ -19,7 +18,7 @@ if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Adm
 }
 
 # Kill TrAsH cHiYoU
-Rename-Item "C:\Program Files (x86)\CHIYOU\REDAgent.exe" "BLUEAgent.exe" -Force
+Rename-Item "C:\Program Files (x86)\CHYIOU\CHYI-IOU\REDAgent.exe" "BLUEAgent.exe" -Force
 taskkill.exe /F /T /IM "REDAgent.exe"
 taskkill.exe /F /T /IM "BLUEAgent.exe"
 
