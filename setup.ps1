@@ -4,8 +4,7 @@ $MINGW_ZIP = 'mingw64.7z'
 $CLION_URL = 'https://download.jetbrains.com/cpp/CLion-2019.3.5.exe'
 $CLION_EXE = 'clion.exe'
 $CLION_INSTALL_DIR = 'C:\CLion'
-$CLION_CONFIG_URL = 'https://download.jetbrains.com/cpp/silent.config'
-$CLION_CONFIG = 'silent.config'
+$CLION_CONFIG = 'clion_silent.config'
 
 # Change Work Dir
 Set-Location $PSScriptRoot
@@ -36,7 +35,6 @@ $path = [System.Environment]::GetEnvironmentVariable("Path", "Machine").Split(";
 
 # CLion
 dl -url $CLION_URL -file $CLION_EXE
-dl -url $CLION_CONFIG_URL -file $CLION_CONFIG
 Start-Process $CLION_EXE @("/S", "/CONFIG=$CLION_CONFIG", "/D=$CLION_INSTALL_DIR") -Wait
 
 # Logout
