@@ -19,7 +19,6 @@ if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Adm
 # Kill TrAsH cHiYoU
 Rename-Item "C:\Program Files (x86)\CHYIOU\CHYI-IOU\REDAgent.exe" "BLUEAgent.exe" -Force
 taskkill.exe /F /T /IM "REDAgent.exe"
-taskkill.exe /F /T /IM "BLUEAgent.exe"
 
 function dl ($url, $file) {
     .\aria2c.exe --dir=$PSScriptRoot --out=$file $url --file-allocation=none
