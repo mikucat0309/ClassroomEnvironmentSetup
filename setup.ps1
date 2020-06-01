@@ -1,7 +1,7 @@
 $MINGW_URL = 'https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z'
 $MINGW_ZIP = 'mingw64.7z'
 
-$CLION_URL = 'https://download.jetbrains.com/cpp/CLion-2019.3.5.exe'
+$CLION_URL = 'https://download.jetbrains.com/cpp/CLion-2020.1.1.exe'
 $CLION_EXE = 'clion.exe'
 $CLION_INSTALL_DIR = 'C:\CLion'
 $CLION_CONFIG = 'clion_silent.config'
